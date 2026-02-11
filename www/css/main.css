@@ -24,18 +24,55 @@ a{
 /*
     not bigger then its parent
 */
-image{
+img{
     max-width: 100%;
 }
 
-.logo{
+.logo-container{
     display: flex;
-    width: 100%;
+    align-items: center;
     background: #D1AB83;
-    margin: 0;
+    width: 100%;
+    margin: 0 0 50px 0;
+    padding: 15px;
+    border-bottom-color: #8e694f;
 }
 
+/* can't growth, a size of the container - automatik*/
+.logo-btn{
+    flex: 0 0 auto;
+}
+
+.logo-btn a{
+    color: #33312E;
+    background: #D1AB83;
+    font-weight: 800;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 2px solid #8E6D56;
+    transition: all 500ms ease;
+}
+
+.logo-btn a:hover{
+    background: #8E6D56;
+    color: #4f4640;
+}
+
+/*
+    this element can take rest place and the text of this el must be in the middle of the el
+*/
 .logo-title{
-
+    flex: 1;
+    text-align: center;
 }
 
+header nav{
+    margin: 0 200px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
