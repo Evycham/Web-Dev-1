@@ -27,8 +27,9 @@ a{
 */
 img{
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
+
 
 /*
     Header
@@ -106,6 +107,7 @@ header nav ul li:not(.active) a:hover{
     transform: scale(1.1);
 }
 
+
 /*
     Main
 */
@@ -119,8 +121,9 @@ main{
     gap: 35px;
     padding: 20px;
     margin: 0 auto;
-    max-width: 1920px;
+    max-width: 1200px;
     text-align: center;
+    background: #E3DDDB;
 }
 
 .clock{
@@ -128,14 +131,50 @@ main{
     flex-direction: column;
     gap: 30px;
     padding: 30px 10px;
+    border: 1px solid #8E6D56;
 }
 
-.clock-img{
+.clock-img, .worker-img{
     border: 2px solid #5A4A40;
     transition: all 500ms ease;
 }
 
-.clock-img:hover{
+.clock-img:hover, .worker-img:hover{
     box-shadow: 0 0 10px #5A4A40;
 }
 
+
+/*
+    Workers
+*/
+
+#workers{
+    display: grid;
+    gap: 50px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    background: #E3DDDB;
+}
+
+.worker{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid #5A4A40;
+}
+
+.worker-occupation{
+    flex: 0 0 140px;
+}
+
+.worker-img{
+    max-height: 250px;
+}
+
+/*
+    About
+*/
